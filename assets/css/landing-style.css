@@ -206,6 +206,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
+/* .nav-menu .btn {
+  margin-right: 1px;  
+} */
+
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
@@ -331,6 +335,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
+  /* background: url("../img/hero-bg.jpg") top center; */
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
@@ -353,6 +358,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+  #hero {
+    /* background: url("../img/hero-bg.jpg") top center; */
+    
+  }
   #hero .container {
     padding-top: 0;
   }
@@ -378,6 +387,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   /* color: #eee; */
   color: #2c3a55;
+}
+
+#hero h6 {
+  margin: 115px 0px 40px 15px;
+  /* font-size: 48px; */
+  font-weight: 700;
+  color: #1a2232;
+}
+
+#hero h6 span {
+  color: #2c3a55;
+  text-transform: uppercase;
 }
 
 #hero .btn {
@@ -540,7 +561,7 @@ section {
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 50%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -1446,14 +1467,17 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #414c64;
+  /* color: #414c64; */
   font-size: 14px;
-  background: #f4f5f8;
+  /* background: #f4f5f8; */
+  color: #fcfcfc;
+  background-color: #1a2232;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fafafc;
+  /* background: #fafafc; */
+  background-color: #202a40;
 }
 
 #footer .footer-top .footer-contact {
@@ -1473,13 +1497,14 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  /* color: #777777; */
+  color: #848484;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  /* color: #444444; */
   position: relative;
   padding-bottom: 12px;
 }
@@ -1512,7 +1537,8 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  /* color: #777777; */
+  color: #848484;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1530,14 +1556,15 @@ section {
 #footer .footer-newsletter h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  /* color: #444444; */
+  color: #848484;
   position: relative;
   padding-bottom: 12px;
 }
 
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  /* background: #fff; */
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
