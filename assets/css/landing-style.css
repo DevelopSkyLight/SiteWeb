@@ -1,8 +1,7 @@
 /**
-* Template Name: Baker - v2.1.0
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Name: SkyLight Games
+* URL: www.skylightgame.com
+* Author: @amn_developer
 */
 
 /*--------------------------------------------------------------
@@ -15,12 +14,13 @@ body {
   background-color: #1a2232;
 }
 
-a {
+/* a {
   color: #ffc107;
-}
+} */
 
 a:hover {
-  color: #ffce3a;
+  /* color: #1a27ff; */
+  color: #1a27ff;
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #ffce3a;
+  background: #1a27ff;
   color: #fff;
 }
 
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #hero {
-    /* background: url("../img/hero-bg.jpg") top center; */
+    background: url("../img/hero-bg-960x853.jpg") top center;
     
   }
   #hero .container {
@@ -368,7 +368,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
-  margin: 0;
+  /* margin: 0; */
+  margin-top: 100px;
   font-size: 72px;
   font-weight: 700;
   line-height: 56px;
@@ -389,14 +390,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c3a55;
 }
 
-#hero h6 {
-  margin: 115px 0px 40px 15px;
+#hero .data-token {
+  margin: 60px 0px 40px 15px;
+}
+
+#hero .data-token img {
+  margin: 10px 10px;
+  /* width: 32px; */
+  /* height: 32px; */
+  max-width: 10%;
+  /* transition: all 0.4s ease-in-out; */
+  /* display: inline-block; */
+  /* padding: 15px 0; */
+  /* -webkit-filter: grayscale(100); */
+  /* filter: grayscale(100); */
+
+  /* background-color: black; */
+}
+
+#hero .data-token h6 {
+  
   /* font-size: 48px; */
   font-weight: 700;
   color: #1a2232;
 }
 
-#hero h6 span {
+#hero .data-token h6 span {
   color: #2c3a55;
   text-transform: uppercase;
 }
@@ -613,6 +632,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about .btn {
+  width: 130px;
+  /* background-color: #1a2232; */
+  border-width: 2px;
 }
 
 /*--------------------------------------------------------------
@@ -1168,7 +1193,7 @@ section {
 }
 
 .pricing .featured .btn-buy:hover {
-  background: #ffce3a;
+  background: #1a27ff;
 }
 
 .pricing .advanced {
@@ -1223,7 +1248,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #ffce3a;
+  color: #1a27ff;
 }
 
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
@@ -1380,7 +1405,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #ffce3a;
+  background: #1a27ff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1595,7 +1620,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #ffce3a;
+  background: #1a27ff;
 }
 
 #footer .credits {
@@ -1619,6 +1644,6 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ffce3a;
+  background: #1a27ff;
   text-decoration: none;
 }

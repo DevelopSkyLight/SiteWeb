@@ -1,9 +1,9 @@
 /**
-* Template Name: Baker - v2.1.0
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Name: SkyLight Games
+* URL: www.skylightgame.com
+* Author: @amn_developer
 */
+
 !(function($) {
   "use strict";
 
@@ -197,3 +197,15 @@
   });
 
 })(jQuery);
+
+
+var copyText = "0xfE9549bb13Bf62dB64860eDbcdBEbC094D78e3F5";
+
+document.getElementById("copy-btn").addEventListener("click", function() {
+  var el = document.createElement("textarea");
+  el.value = copyText;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+});
