@@ -1,0 +1,85 @@
+<!--start wrapper-->
+<div class="wrapper">
+  <!--start content-->
+  <!-- <main class="page-content"> -->
+
+    <!--start content-->
+    <main class="authentication-content">
+      <div class="container">
+        <div class="mt-4">
+          <div class="card rounded-0 overflow-hidden shadow-none border">
+            <div class="row g-0">
+              <div class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end">
+                <img src="/assets/images/gallery/auth-img-7.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-12 col-xl-4 order-xl-2">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title">Sign In</h5>
+                  <p class="card-text mb-4">See your growth and get consulting support!</p>
+                  <form class="form-body" action="/signin" method="POST">
+
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label for="wallet" class="form-label">Address</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-person-circle"></i></div>
+                          <input type="text" class="form-control radius-5 ps-5" id="wallet"
+                            name="wallet" placeholder="Connect with your wallet" readonly>
+                        </div>
+                      </div>
+                      <!-- <div class="col-12">
+                        <label for="inputEmailAddress" class="form-label">Email Address</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-envelope-fill"></i></div>
+                          <input type="email" class="form-control radius-5 ps-5" id="inputEmailAddress"
+                            placeholder="Email">
+                        </div>
+                      </div> -->
+                      <div class="col-12">
+                        <label for="password" class="form-label">Enter Password</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-lock-fill"></i></div>
+                          <input type="password" class="form-control radius-5 ps-5" id="password"
+                            name="password" placeholder="Password">
+                        </div>
+                      </div>
+                      
+                      <div class="col-12">
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-primary radius-5" id="submitButton">Sign In</button>
+                        </div>
+                      </div>
+                      
+                      <div class="col-12 text-center">
+                        <p class="mb-0">Don't have an account yet? 
+                          <a href="/signup">Sign up here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--end page main-->
+  <!-- </main> -->
+  <!--end page main-->
+
+  <!--start overlay-->
+  <div class="overlay nav-toggle-icon"></div>
+  <!--end overlay-->
+
+  <%- include('../sign/sign-footer') -%>
+
+    <!--Start Back To Top Button-->
+    <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+
+</div>
+<!--end wrapper-->

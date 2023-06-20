@@ -1,0 +1,43 @@
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if(alert) { %>
+  <script>
+    Swal.fire({
+      title: '<%= alertTitle %>',
+      text: '<%= alertMessage %>',
+      icon: '<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+      }).then(() => {
+        window.location = '/<%= ruta %>'
+      })
+  </script>
+<% } %>
+
+<script>
+  var wallet = document.getElementById("wallet");
+  var password1 = document.getElementById("password");
+  var password2 = document.getElementById("password2");
+
+  password2.addEventListener("keyup", function () {
+    var password1Value = password1.value;
+    var password2Value = password2.value;
+    if (password1Value !== password2Value) {
+      password2.setCustomValidity("Passwords do not match");
+    } else {
+      password2.setCustomValidity("");
+    }
+  });
+
+  var submitButton = document.getElementById("submitButton");
+  submitButton.addEventListener("click", function (event) {
+    if (!wallet.value) {
+      event.preventDefault();
+      alert("The address cannot be empty. Connect with your wallet.");
+    }
+    if (password1.value !== password2.value) {
+      event.preventDefault();
+      alert("Passwords do not match");
+    }
+  });
+</script>

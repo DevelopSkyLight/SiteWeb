@@ -1,0 +1,27 @@
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if(alert) { %>
+  <script>
+    Swal.fire({
+      title: '<%= alertTitle %>',
+      text: '<%= alertMessage %>',
+      icon: '<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+      }).then(() => {
+        window.location = '/<%= ruta %>'
+      })
+  </script>
+<% } %>
+
+<script>
+  var wallet = document.getElementById("wallet");
+
+  var submitButton = document.getElementById("submitButton");
+  submitButton.addEventListener("click", function (event) {
+    if (!wallet.value) {
+      event.preventDefault();
+      alert("The address cannot be empty. Connect with your wallet.");
+    }
+  });
+</script>

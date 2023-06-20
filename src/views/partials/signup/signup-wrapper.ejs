@@ -1,0 +1,120 @@
+<!--start wrapper-->
+<div class="wrapper">
+  <!--start content-->
+  <!-- <main class="page-content"> -->
+
+    <!--start content-->
+    <main class="authentication-content">
+      <div class="container">
+        <div class="mt-4">
+          <div class="card rounded-0 overflow-hidden shadow-none border">
+            <div class="row g-0">
+              <div class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end">
+                <img src="/assets/images/gallery/auth-img-register3.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-12 col-xl-4 order-xl-2">
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title">Sign Up</h5>
+                  <p class="card-text mb-4">See your growth and get consulting support!</p>
+                  <form class="form-body" action="/signup" method="POST">
+
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label for="referallink" class="form-label">You Were Invited</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-person-heart"></i></div>
+                          <input type="text" class="form-control radius-5 ps-5" id="referallink"
+                            name="referral_link" placeholder="You Were Invited" value="<%= sponsorcode %>" 
+                            readonly>
+                        </div>
+                        <!-- <p>To continue the signup you must enter the identifier of the person who invited you</p> -->
+                      </div>
+                      <div class="col-12">
+                        <label for="wallet" class="form-label">Address</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-wallet2"></i></div>
+                          <input type="text" class="form-control radius-5 ps-5" id="wallet"
+                            name="wallet" placeholder="Connect with your wallet" required readonly>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-person-circle"></i></div>
+                          <input type="text" class="form-control radius-5 ps-5" id="username"
+                            name="username" placeholder="Username" required>
+                        </div>
+                      </div>
+                      <!-- <div class="col-12">
+                        <label for="inputEmailAddress" class="form-label">Email Address</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-envelope-fill"></i></div>
+                          <input type="email" class="form-control radius-5 ps-5" id="inputEmailAddress"
+                            placeholder="Email">
+                        </div>
+                      </div> -->
+                      <div class="col-12">
+                        <label for="password" class="form-label">Enter Password</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-lock-fill"></i></div>
+                          <input type="password" class="form-control radius-5 ps-5" id="password"
+                          name="password" placeholder="Password" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="password2" class="form-label">Repeat Password</label>
+                        <div class="ms-auto position-relative">
+                          <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i
+                              class="bi bi-lock-fill"></i></div>
+                          <input type="password" class="form-control radius-5 ps-5" id="password2"
+                            placeholder="Password" required>
+                        </div>
+                      </div>
+                      <!-- <div class="col-12">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                          <label class="form-check-label" for="flexSwitchCheckChecked">I Agree to the Trems &
+                            Conditions</label>
+                        </div>
+                      </div> -->
+                      <div class="col-12">
+                        <div class="d-grid">
+                          <button type="submit" class="btn btn-primary radius-5" id="submitButton">Sign Up</button>
+                        </div>
+                      </div>
+                      
+                      <div class="col-12 text-center">
+                        <p class="mb-0">Already have an account? <a
+                            href="/signin">Sign in here</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--end page main-->
+  <!-- </main> -->
+  <!--end page main-->
+
+  <!--start overlay-->
+  <div class="overlay nav-toggle-icon"></div>
+  <!--end overlay-->
+
+  <%- include('../sign/sign-footer') -%>
+
+    <!--Start Back To Top Button-->
+    <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+
+</div>
+<!--end wrapper-->

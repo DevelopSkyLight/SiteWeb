@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<%- include('./partials/head') -%>
+
+<body>
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <!--Start Top Header-->
+    <%- include('./partials/header') -%>
+    <!--End Top Header-->
+
+    <!--start sidebar -->
+    <%- include('./partials/sidebar_') -%>
+    <!--end sidebar -->
+
+    <!--start content-->
+    <%- body %>
+    <!--end page main-->
+
+    <!--start overlay-->
+    <div class="overlay nav-toggle-icon"></div>
+    <!--end overlay-->
+
+    <!--start footer-->
+    <%- include('./partials/footer') -%>
+    <!--end footer-->
+
+
+    <!--Start Back To Top Button-->
+      <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+
+     
+  </div>
+  <!--end wrapper-->
+
+  <!-- Foot -->
+  <%- include('./partials/foot') -%>
+  <!-- End Foot -->
+
+  <!-- <%- script %> -->
+  
+</body>
+</html>

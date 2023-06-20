@@ -1,0 +1,26 @@
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const connectButton = document.getElementById('connect-button');
+
+    // Agrega un evento "onclick" al botón para conectar con Metamask
+    connectButton.addEventListener('click', async () => {
+      // Verifica si Metamask está instalado en el navegador
+      if (typeof window.ethereum !== 'undefined') {
+        console.log('Conectando a Metamask...');
+        try {
+          // Pide al usuario que apruebe la conexión
+          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          accounts = await web3.eth.getAccounts()
+          account_id = accounts[0]
+          document.getElementById("wallet").value = account_id;
+          console.log('Conexión exitosa!');
+        } catch (error) {
+          console.error(error);
+        }
+      } else {
+        document.getElementById("wallet").placeholder = 'Wallet not detected';
+        console.log('Metamask no está instalado en este navegador.');
+      }
+    });
+  });
+</script>
